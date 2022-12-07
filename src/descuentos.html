@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="card-container">
+
+        <section class="cards manualDiscount">
+            <h2>Descuentos con porcentaje manual</h2>
+            <form action="">
+                <label for="price">Precio</label>
+                <input type="number" id="price" name="price" required>
+                <label for="discount">Descuento</label>
+                <input type="number" id="discount" name="discount" required>
+                <button type="button" id="btn">calcular</button>
+            </form>
+            <labe>Precio Total: </labe>
+            <p id="realPrice"></p>
+        </section>
+        <section class="cards cupon">
+            <h2>Descuentos con cupon</h2>
+            <form action="">
+                <label for="price2">Precio</label>
+                <input type="number" id="price2" name="price" required>
+                <label for="discount2">Descuento</label>
+                <input type="text" id="discount2" name="discount" required>
+                <button type="button" id="btn2">calcular</button>
+            </form>
+            <labe>Precio Total: </labe>
+            <p id="realPrice2"></p>
+        </section>
+    </section>
+    <p>Descubre cupones abriendo la consola ctrl + shift + J, acontinuacion mediante la funcion getDiscount()</p>
+    <script defer src="./descuentos.js"></script>
+</body>
+</html>
