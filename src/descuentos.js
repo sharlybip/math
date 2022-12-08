@@ -37,20 +37,28 @@ function calcPrice2 () {
         realPrice2.innerText = "Debes llenar los campos";
         return;
     }
+    switch(discount) {
+        case 'platzi15':
+
+    }
+    const show = (descuento) =>{
+        const showPrice = price * (100 - descuento)/100;
+        realPrice2.innerText = `Felicidades obtuvistre un ${descuento}% de descuebto => Precio con descuento ${showPrice}`;
+        
+
+    }
+
     if (discount === 'platzi15') {
-        const showPrice = price * (100 - 15)/100;
-        realPrice2.innerText = `Felicidades obtuvistre un 15% de descuebto => Precio con descuento ${showPrice}`;
+        show(15);
         return;
     }
     else if (discount === 'platzi30') {
-        const showPrice = price * (100 - 30)/100;
-        realPrice2.innerText = `Felicidades obtuvistre un 30% de descuebto => Precio con descuento ${showPrice}`;
+        show(30);
         return;
 
     }
     else if (discount === 'platzi50') {
-        const showPrice = price * (100 - 30)/100;
-        realPrice2.innerText = `Felicidades obtuvistre un 50% de descuebto => Precio con descuento: ${showPrice}`;
+        show(50);
         return;
 
     } else {
